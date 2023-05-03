@@ -1,5 +1,5 @@
 ---
-title: VoIP
+title: Voice over IP
 description: Voice over IP
 ha_category:
   - Voice
@@ -10,6 +10,12 @@ ha_codeowners:
   - '@synesthesiam'
 ha_domain: voip
 ha_integration_type: integration
+ha_quality_scale: internal
+ha_platforms:
+  - binary_sensor
+  - select
+  - switch
+ha_config_flow: true
 ---
 
 The VoIP integration enables users to talk to [Assist](/docs/assist) using an analog phone and a VoIP adapter. Currently, the system works with the [Grandstream HT801](https://amzn.to/40k7mRa). See [the tutorial](/projects/worlds-most-private-voice-assistant) for detailed instructions.
