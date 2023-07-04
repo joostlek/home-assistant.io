@@ -33,10 +33,6 @@ module Jekyll
 
             # Find all headers, make them linkable
             dom.css('h2,h3,h4,h5,h6,h7,h8').each do |header|
-
-                # Skip linked headers
-                next if header.at_css('a')
-
                 title = header.content
                 slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
                 header.children = "<a class='title-link' name='#{slug}' href='\##{slug}'></a> #{title}"
