@@ -190,6 +190,10 @@ Do this if you have an existing Z-Wave network and want to use a new controller.
    - Connect the new controller.
    - Confirm that you connected the new controller by selecting **Submit**.
 6. Follow the steps on screen.
+7. Once the migration has completed, check if you want to rename the adapter. If you have previously changed the name, the new adapter might keep the name of the old adapter.
+   - In the top-left corner, select the back button to go back to the integration page.
+   - In the list of devices, check the device name.
+   - To change the device name, select the {% icon "mdi:pencil" %} button.
 
 ## Overriding the radio frequency region of the controller in the Z-Wave JS add-on
 
